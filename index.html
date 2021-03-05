@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <title>Slider выбора цвета текста и фона</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="app ui-widget-content ui-corner-all">
+            <fieldset class="app_header">
+                <legend>Select: </legend>
+                <label for="radio-1">Color</label>
+                <input type="radio" name="typeOfColor" id="radio-1" data-type="color">
+                <label for="radio-2">Background Color</label>
+                <input type="radio" name="typeOfColor" id="radio-2" data-type="background-color" checked>
+            </fieldset>
+            <div class="app_sliders">
+                <div id="sliderRed"></div>
+                <div id="sliderGreen"></div>
+                <div id="sliderBlue"></div>
+            </div>
+            <div id="swatch" class="ui-widget-content ui-corner-all"><b>Здесь текс у которогр можно менять цвет</b></div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
